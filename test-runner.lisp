@@ -1,6 +1,4 @@
-;; used to run tests locally
-;; waiting for cl-unac to be available on quicklisp
-(push "../" ql:*local-project-directories*)
+(ql-dist:install-dist "http://dist.ultralisp.org/" :prompt nil)
 (push *default-pathname-defaults* ql:*local-project-directories*)
 
 (quicklisp:quickload :cl-unac.config)
