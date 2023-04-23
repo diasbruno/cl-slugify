@@ -47,3 +47,7 @@
  ()
   (5am:is (equal (cl-slugify:string-to-slug "abc1234-" :trailing-dash :always)
 		 "abc1234")))
+
+(5am:def-test dont-remove-middle-dash-when-removing-trailing-and-leading-dash ()
+  (5am:is (equal (cl-slugify:string-to-slug "-abc 12 34-" :leading-dash :always :trailing-dash :always)
+		 "abc-12-34")))
