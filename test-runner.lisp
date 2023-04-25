@@ -1,9 +1,4 @@
-(ql-dist:install-dist "http://dist.ultralisp.org/" :prompt nil)
 (push *default-pathname-defaults* ql:*local-project-directories*)
-
-(quicklisp:quickload :cl-unac.config)
-
-(cl-unac.config:load-from-custom-path "/usr/lib/x86_64-linux-gnu/libunac")
 
 (quicklisp:quickload :cl-slugify.tests)
 
